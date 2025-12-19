@@ -5,7 +5,7 @@ const app = express();
 app.use(express.text({ type: "*/*" }));
 
 app.post("/", async (req, res) => {
-  const apiURL = "https://bapeauth.com/dashboard/auth/api.php";
+  const apiURL = "https://bapecheats.com/dashboard/auth/api.php";
 
   try {
     const forwardRes = await fetch(apiURL, {
@@ -28,3 +28,4 @@ app.post("/", async (req, res) => {
 app.listen(10000, () => {
   console.log("Secure HTTP Proxy running on port 10000");
 });
+
